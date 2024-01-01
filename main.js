@@ -11,7 +11,7 @@ function animationSrtart() {
         case window.scrollY === 0:
             document.getElementById("header").style.background = 'rgba(0,0,0,0.0)';
             break;
-        case window.scrollY > 100 && window.scrollY < 800:
+        case window.scrollY > 90 && window.scrollY < 800:
             document.getElementById("header").style.background = 'rgba(250,250,250,0.8)';
             break;
 

@@ -70,10 +70,23 @@ ul {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
+	
 }
 
+li{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+li:hover{
+	transition: all 1s;
+	background-color: rgba(0, 0, 0, 0.3);
+	height: 100px;
+	display: flex;
+	align-items: center;
+	border-radius: 15px;
 
 
+}
 
 ul>li>a {
 
@@ -94,6 +107,7 @@ ul>li>a:visited {
 
 ul>li>a:hover {
 	text-decoration: none;
+
 }
 
 ul>li>a:active {
@@ -104,9 +118,11 @@ ul>li>a:active {
 
 
 #hero-text-container {
-	/*background-color: red;*/
-	padding: 80px;
+	/*background-color: red;s*/
+	margin: 0 auto;
+	/*padding: 80px;*/
 	padding-top: 100px;
+	max-width: 1200px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -133,11 +149,11 @@ p {
 }
 
 #hero-image {
-	max-width: 1200px;
+	/*max-width: 1200px;*/
 	width: 100vw;
 	/*margin-right: 100px;
 	margin-left: 100px;*/
-	box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+	/*box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;*/
 	height: 750px;
 	font-family: var(--primary-font),
 
@@ -161,12 +177,18 @@ p {
 
 
 
+
+/*my knowlege section ===============================================*/
+
+
 #knowledge {
+	
 	margin: 0 auto;
 	/* background-color: red; */
 	max-width: 1200px;
 	height: 600px;
-	background-color: rgba(228, 228, 228, 0.147);
+	/*background-color: rgba(228, 228, 228, 0.436);*/
+
 }
 
 h4 {
@@ -175,10 +197,28 @@ h4 {
 }
 
 section>h3 {
+
 	font-weight: 500;
 	text-align: center;
-	font-size: 2.5em;
-	margin-bottom: 20px;
+	font-size: 2em;
+	margin-bottom: 30px;
+	letter-spacing: 0.1em;
+
+
+}
+
+
+section > p {
+
+	font-weight: 500;
+	text-align: center;
+	font-size: 1.2em;
+	/*max-width: 300px;*/
+	padding-right: 150px;
+	padding-left: 150px;
+	margin-bottom: 30px;
+	text-align: center;
+
 
 }
 
@@ -187,8 +227,8 @@ section>h3 {
 .load-bar {
 	margin-bottom: 30px;
 	width: 470px;
-	height: 20px;
-	background-color: gray;
+	height: 15px;
+	background-color: rgb(162, 162, 162);
 }
 
 .languages-container {
