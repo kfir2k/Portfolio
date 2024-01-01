@@ -38,7 +38,7 @@ sans-serif;
 }
 
 #header {
-	transition: all 2s;
+	transition: all 1s;
 	position: fixed;
 	width: 100%;
 	/* background-color: wheat; */
@@ -224,10 +224,10 @@ section > p {
 
 
 
-.load-bar {
+#load-bar {
 	margin-bottom: 30px;
 	width: 470px;
-	height: 15px;
+	height: 20px;
 	background-color: rgb(162, 162, 162);
 }
 
@@ -239,4 +239,11 @@ section > p {
 
 .space {
 	height: 100px;
+}
+
+#html{
+	text-align: right;
+	background-color: red;
+	width: 1%;
+	height: 20px;
 }
