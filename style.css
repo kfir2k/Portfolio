@@ -4,9 +4,13 @@
 	box-sizing: border-box;
 }
 
+.hidden{
+	visibility: hidden;
+}
 
-
-
+.none{
+	display: none;
+}
 
 
 
@@ -14,28 +18,24 @@
 	--main-text-color: black;
 }
 
-
 nav{
-	/*background-color: red;*/
 	display: flex;
-	height: 80px;
+	height: 100px;
 	max-width: 1200px;
 	list-style: none;
 	font-family: 'Assistant',sans-serif;
 	justify-content: space-between;
 	font-size: 1.5em;
 	font-weight: 400;
-	/*background-color: red;*/
 	margin: 0 auto;
 	align-items: center;
-	
 	
 }
 
 
 ul{
-	/*background-color: aqua;*/
-	height: 80px;
+
+	height: 100px;
 	list-style: none;
 	display: flex;
 	align-items: center;
@@ -46,6 +46,7 @@ ul{
 
 
 ul > li > a{
+
 	text-decoration: none;
 	color: var(--main-text-color);
 	display: block;
@@ -120,3 +121,15 @@ p{
 .navbar-icon{
 
 }
+
+#myLogo{
+	width: 40px;
+}
+
+
+#myLogoHero{
+	width: 150px;
+
+}
+
+
