@@ -30,6 +30,7 @@ let progressBarExecuted = false;
 window.onscroll = function () {
     if (!progressBarExecuted && document.documentElement.scrollTop > 500) {
         progressBar("html", 100);
+        progressBar("css", 100);
         progressBarExecuted = true;
     }
 };
@@ -54,7 +55,7 @@ function progressBar(el, precent) {
         }
         console.log("interval cleard done!!!!!!!!!!!");
 
-    }, 10)
+    }, 5)
 
 
 
