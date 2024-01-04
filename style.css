@@ -291,3 +291,19 @@ section>p {
 	height: 20px;
 	transition: ease-out 1s;
 }
+
+#photoshop {
+	text-align: right;
+	background-color: rgb(0, 255, 140);
+	width: 1%;
+	height: 20px;
+	transition: ease-out 1s;
+}
+
+#lightroom {
+	text-align: right;
+	background-color: rgb(197, 42, 42);
+	width: 1%;
+	height: 20px;
+	transition: ease-out 1s;
+}

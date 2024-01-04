@@ -23,8 +23,10 @@ window.onscroll = function () {
         progressBar("html", 100);
         progressBar("css", 100);
         progressBar("js", 100);
-        progressBar("react", 100);
-        progressBar("react-native", 100);
+        progressBar("react", 80);
+        progressBar("react-native", 80);
+        progressBar("photoshop", 100);
+        progressBar("lightroom", 100);
         progressBarExecuted = true;
     }
 };
