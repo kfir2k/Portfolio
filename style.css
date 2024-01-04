@@ -244,6 +244,14 @@ section>p {
 	height: 100px;
 }
 
+.header-text-icon {
+	display: flex;
+	align-items: center;
+	gap: 0.7em;
+}
+
+
+
 #html {
 	text-align: right;
 	background-color: red;
@@ -257,6 +265,7 @@ section>p {
 	background-color: rgb(255, 157, 0);
 	width: 1%;
 	height: 20px;
+	transition: ease-out 1s;
 }
 
 #js {
@@ -264,6 +273,7 @@ section>p {
 	background-color: rgb(0, 106, 255);
 	width: 1%;
 	height: 20px;
+	transition: ease-out 1s;
 }
 
 #react {
@@ -271,4 +281,13 @@ section>p {
 	background-color: rgb(0, 255, 174);
 	width: 1%;
 	height: 20px;
+	transition: ease-out 1s;
+}
+
+#react-native {
+	text-align: right;
+	background-color: rgb(255, 0, 217);
+	width: 1%;
+	height: 20px;
+	transition: ease-out 1s;
 }

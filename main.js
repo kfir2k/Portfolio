@@ -24,6 +24,7 @@ window.onscroll = function () {
         progressBar("css", 100);
         progressBar("js", 100);
         progressBar("react", 100);
+        progressBar("react-native", 100);
         progressBarExecuted = true;
     }
 };
