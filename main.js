@@ -17,20 +17,13 @@ function animationStart() {
     }
 }
 
-
-// window.onscroll = function () {
-
-//     if (document.documentElement.scrollTop > 500) {
-//         progressBar("html", 100)
-//     }
-
-// };
-
 let progressBarExecuted = false;
 window.onscroll = function () {
     if (!progressBarExecuted && document.documentElement.scrollTop > 500) {
         progressBar("html", 100);
         progressBar("css", 100);
+        progressBar("js", 100);
+        progressBar("react", 100);
         progressBarExecuted = true;
     }
 };
@@ -42,6 +35,7 @@ window.onscroll = function () {
 
 function progressBar(el, precent) {
     el = document.getElementById(el);
+    el.style.width = `${precent}%`
     let start = 0
     let interval = setInterval(() => {
         if (start >= precent) {
@@ -51,11 +45,11 @@ function progressBar(el, precent) {
             start++
             console.log(start);
             el.innerHTML = `${start}%`
-            el.style.width = `${start}%`
+
         }
         console.log("interval cleard done!!!!!!!!!!!");
 
-    }, 5)
+    }, 10)
 
 
 

@@ -119,6 +119,8 @@ ul>li>a:active {
 
 
 #hero-text-container {
+
+
 	/*background-color: red;s*/
 	margin: 0 auto;
 	padding-left: 30px;
@@ -247,11 +249,26 @@ section>p {
 	background-color: red;
 	width: 1%;
 	height: 20px;
+	transition: ease-out 1s;
 }
 
 #css {
 	text-align: right;
 	background-color: rgb(255, 157, 0);
+	width: 1%;
+	height: 20px;
+}
+
+#js {
+	text-align: right;
+	background-color: rgb(0, 106, 255);
+	width: 1%;
+	height: 20px;
+}
+
+#react {
+	text-align: right;
+	background-color: rgb(0, 255, 174);
 	width: 1%;
 	height: 20px;
 }
