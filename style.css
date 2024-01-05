@@ -154,7 +154,7 @@ p {
 #hero-image-container {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 75px;
+	/* margin-bottom: 75px; */
 }
 
 #hero-image {
@@ -189,23 +189,26 @@ p {
 
 /*my knowlege section ===============================================*/
 
+section {
 
-#knowledge {
-
-	margin: 0 auto;
-	/* background-color: red; */
+	margin: 20px auto;
 	max-width: 1200px;
 	height: 600px;
 	/*background-color: rgba(228, 228, 228, 0.436);*/
 
+
+
 }
+
+
+#knowledge {}
 
 h4 {
 	font-size: 1.5em;
 	font-weight: 400;
 }
 
-section>h3 {
+section h3 {
 
 	font-weight: 500;
 	text-align: center;
@@ -217,7 +220,7 @@ section>h3 {
 }
 
 
-section>p {
+section p {
 
 	font-weight: 500;
 	text-align: center;
@@ -311,6 +314,23 @@ section>p {
 	height: 20px;
 	transition: ease-out 1s;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

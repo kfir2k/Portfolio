@@ -2,17 +2,18 @@
 
 console.log("test");
 window.addEventListener("scroll", animationStart)
+window.addEventListener("DOMContentLoaded", animationStart)
 
 function animationStart() {
 
-    console.log(window.scrollY);
+    console.log("scroll ev", window.scrollY);
 
     switch (true) {
         case window.scrollY === 0:
             document.getElementById("header").style.background = 'rgba(0,0,0,0.0)';
             break;
-        case window.scrollY > 90 && window.scrollY < 800:
-            document.getElementById("header").style.background = 'rgba(250,250,250,0.8)';
+        case window.scrollY > 90:
+            document.getElementById("header").style.background = 'rgba(250,250,250,0.9)';
             break;
     }
 }
@@ -43,14 +44,14 @@ function progressBar(el, precent) {
     let interval = setInterval(() => {
         if (start >= precent) {
             clearInterval(interval)
-            console.log("interval cleard");
+            // console.log("interval cleard");
         } else {
             start++
             console.log(start);
             el.innerHTML = `${start}%`
 
         }
-        console.log("interval cleard done!!!!!!!!!!!");
+        // console.log("interval cleard done!!!!!!!!!!!");
 
     }, 10)
 
