@@ -38,11 +38,16 @@ sans-serif;
 }
 
 #header {
-	transition: all 1s;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	transition: all 2s;
 	position: fixed;
 	width: 100%;
 	/* background-color: wheat; */
 	z-index: 999;
+}
+
+.space {
+	height: 70px;
 }
 
 
@@ -50,12 +55,13 @@ nav {
 
 	max-width: 1200px;
 	display: flex;
-	height: 100px;
+	height: 70px;
 	list-style: none;
 	font-family: var(--primary-font);
 	justify-content: space-between;
-	font-size: 1.5em;
-	font-weight: 400;
+	font-size: 1.2em;
+	letter-spacing: 0.1em;
+	font-weight: 300;
 	margin: 0 auto;
 	align-items: center;
 
@@ -65,7 +71,7 @@ nav {
 ul {
 
 	width: 600px;
-	height: 100px;
+	height: 70px;
 	list-style: none;
 	display: flex;
 	justify-content: space-evenly;
@@ -81,10 +87,10 @@ li {
 li:hover {
 	transition: all 1s;
 	background-color: rgba(0, 0, 0, 0.3);
-	height: 100px;
+	height: 70px;
 	display: flex;
 	align-items: center;
-	border-radius: 15px;
+	/* border-radius: 15px; */
 
 
 }
@@ -240,9 +246,7 @@ section>p {
 	justify-content: space-evenly;
 }
 
-.space {
-	height: 100px;
-}
+
 
 .header-text-icon {
 	display: flex;
@@ -306,4 +310,76 @@ section>p {
 	width: 1%;
 	height: 20px;
 	transition: ease-out 1s;
+}
+
+
+
+@media screen and (max-width: 992px) {}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+
+	ul {
+		/* display: none; */
+
+	}
+
+
+	nav {
+
+		font-size: 1em;
+
+		#myLogo {
+			width: 20px;
+			margin-left: 7.5px;
+			margin-right: 7.5px;
+		}
+
+	}
+
+
+
+	.hidden {
+		visibility: visible;
+	}
+
+	#hero-image-container {
+		margin-bottom: 50px;
+	}
+
+	#hero-text-container {
+
+
+		/*background-color: red;s*/
+		margin: 0 auto;
+		padding-left: 30px;
+		padding-top: 100px;
+		max-width: 1200px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		font-family: var(--primary-font);
+		font-weight: 350;
+		font-size: 2.4em;
+		letter-spacing: 0.2em;
+		line-height: 1.2;
+
+	}
+
+	#hero-image {
+		/*max-width: 1200px;*/
+		width: 100vw;
+		/*margin-right: 100px;
+		margin-left: 100px;*/
+		/*box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;*/
+		height: 500px;
+		font-family: var(--primary-font),
+
+	}
+
+
+
+
+
+
 }
