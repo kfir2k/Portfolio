@@ -3,6 +3,8 @@
 console.log("test");
 window.addEventListener("scroll", animationStart)
 window.addEventListener("DOMContentLoaded", animationStart)
+window.addEventListener("DOMContentLoaded", knowlegeController )
+window.addEventListener("scroll", knowlegeController )
 
 function animationStart() {
 
@@ -19,7 +21,7 @@ function animationStart() {
 }
 
 let progressBarExecuted = false;
-window.onscroll = function () {
+function knowlegeController () {
     if (!progressBarExecuted && document.documentElement.scrollTop > 500) {
         progressBar("html", 100);
         progressBar("css", 100);
@@ -40,6 +42,7 @@ window.onscroll = function () {
 function progressBar(el, precent) {
     el = document.getElementById(el);
     el.style.width = `${precent}%`
+    
     let start = 0
     let interval = setInterval(() => {
         if (start >= precent) {
