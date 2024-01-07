@@ -483,6 +483,11 @@ section p {
 
 
 
+.grayColor{
+	background-color: rgb(153, 153, 153);
+}
+
+
 
 .form{
 	/*background-color: #5fc2ff;*/
@@ -498,6 +503,20 @@ form{
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+}
+label{
+	font-family: var(--primary-font);
+	font-size: 1em;
+}
+
+form input[type=text],input[type=email] {
+	height: 50px;
+	background-color:rgb(255, 255, 255) ;
+}
+
+textarea{
+	height: 50px;
+		background-color: rgb(255, 255, 255);
 }
 
 
