@@ -1,6 +1,6 @@
 // ===================Website ui ================
 
-console.log("test");
+//console.log("test");
 window.addEventListener("scroll", animationStart)
 window.addEventListener("DOMContentLoaded", animationStart)
 window.addEventListener("DOMContentLoaded", knowlegeController )
@@ -8,7 +8,7 @@ window.addEventListener("scroll", knowlegeController )
 
 function animationStart() {
 
-    console.log("scroll ev", window.scrollY);
+    //console.log("scroll ev", window.scrollY);
 
     switch (true) {
         case window.scrollY === 0:
@@ -50,7 +50,7 @@ function progressBar(el, precent) {
             // console.log("interval cleard");
         } else {
             start++
-            console.log(start);
+            //console.log(start);
             el.innerHTML = `${start}%`
 
         }
@@ -59,6 +59,21 @@ function progressBar(el, precent) {
     }, 10)
 
 
+
+}
+
+
+
+
+
+const projItemsArray = document.querySelectorAll('.item')
+projItemsArray.forEach((item) => item.addEventListener("click", openLandingPage))
+console.log("--------",projItemsArray);
+function openLandingPage(e) {
+    console.log(e);
+    console.log(projItemsArray.keys());
+    
+    
 
 }
 
