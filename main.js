@@ -28,8 +28,9 @@ function knowlegeController () {
         progressBar("js", 100);
         progressBar("react", 80);
         progressBar("react-native", 80);
+        progressBar("typescript", 100);
         progressBar("photoshop", 100);
-        progressBar("lightroom", 100);
+
         progressBarExecuted = true;
     }
 };
@@ -67,15 +68,9 @@ function progressBar(el, precent) {
 
 
 const projItemsArray = document.querySelectorAll('.item')
-projItemsArray.forEach((item) => item.addEventListener("click", openLandingPage))
+projItemsArray.forEach((item) => item.addEventListener("click", openModal))
 console.log("--------",projItemsArray);
-function openLandingPage(e) {
-    console.log(e);
-    console.log(projItemsArray.keys());
-    
-    
 
-}
 
 
 //progressBar()
