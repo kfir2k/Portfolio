@@ -3,8 +3,8 @@
 //console.log("test");
 window.addEventListener("scroll", animationStart)
 window.addEventListener("DOMContentLoaded", animationStart)
-window.addEventListener("DOMContentLoaded", knowlegeController )
-window.addEventListener("scroll", knowlegeController )
+window.addEventListener("DOMContentLoaded", knowlegeController)
+window.addEventListener("scroll", knowlegeController)
 
 function animationStart() {
 
@@ -21,7 +21,7 @@ function animationStart() {
 }
 
 let progressBarExecuted = false;
-function knowlegeController () {
+function knowlegeController() {
     if (!progressBarExecuted && document.documentElement.scrollTop > 500) {
         progressBar("html", 100);
         progressBar("css", 100);
@@ -43,7 +43,7 @@ function knowlegeController () {
 function progressBar(el, precent) {
     el = document.getElementById(el);
     el.style.width = `${precent}%`
-    
+
     let start = 0
     let interval = setInterval(() => {
         if (start >= precent) {
@@ -68,10 +68,20 @@ function progressBar(el, precent) {
 
 
 const projItemsArray = document.querySelectorAll('.item')
-projItemsArray.forEach((item) => item.addEventListener("click", openModal))
-console.log("--------",projItemsArray);
+projItemsArray.forEach((item) => item.addEventListener("click", openModalPreviewProjects))
+console.log("--------", projItemsArray);
+
+
+const landingPage1 = `
+
+
+`
 
 
 
-//progressBar()
+function openModalPreviewProjects(){
+
+
+
+}
 
