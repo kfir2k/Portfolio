@@ -1,0 +1,9 @@
+{
+    "[html]": {
+        "editor.defaultFormatter": null
+    },
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "liveServer.settings.port": 5501
+}

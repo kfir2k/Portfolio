@@ -1,0 +1,148 @@
+/* ==========reset bootstrap & CSS============= */
+
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        .h1,
+        .h2,
+        .h3,
+        .h4,
+        .h5,
+        .h6,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-top: 0;
+            margin-bottom: 0.0rem;
+            font-weight: 0;
+            line-height: 0;
+            color: var(--bs-heading-color);
+        }
+
+
+/* ============================================================= */
+
+
+
+        :root {
+            --primary: #ffffff;
+            --secondary: #F9F9F9;
+        }
+
+        h1 {
+            text-shadow: 0px 0px 36px #00000087;
+            text-align: left;
+            font: normal normal normal 160px/231px Satisfy;
+            color: var(--primary);
+            margin-bottom: 0.625rem;
+
+
+        }
+
+        main {
+            max-width: 1100px !important;
+        }
+
+        .title {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        h2 {
+            font: normal normal normal 32px/38px Varela Round;
+            text-align: center;
+            color: var(--primary);
+            margin-bottom: 1.125rem;
+        }
+
+        p {
+            font: normal normal normal 16px/20px Varela Round;
+            text-align: center;
+            color: var(--primary);
+            margin-bottom: 0.3rem;
+        }
+
+        .form-label {
+            margin-bottom: 0.19rem;
+        }
+
+        label {
+            font: normal normal normal 16px/20px Varela Round;
+            color: var(--secondary);
+        }
+
+        body {
+            background: linear-gradient(360deg, #2DFF8C, #281EFF);
+            height: 100vh;
+        }
+
+        input {
+            background: #F6F6F624 0% 0% no-repeat padding-box !important;
+            border: 2px solid var(--primary) !important;
+            height: 50px;
+
+        }
+
+        button {
+            font: normal normal normal 16px/20px Varela Round;
+            height: 50px;
+        }
+
+        .nowrap-lang {
+            white-space: nowrap;
+            /* Prevent text from wrapping */
+        }
+
+
+
+
+
+        @media screen and (max-width: 768px) {
+            h1 {
+                font: normal normal normal 60px/86px Satisfy;
+                margin-bottom: 1.3rem;
+            }
+
+            h2 {
+                font: normal normal normal 18px/22px Varela Round;
+                margin-bottom: 1.3rem;
+
+            }
+
+            p {
+                font: normal normal normal 16px/20px Varela Round;
+                margin-bottom: 1.375rem;
+                
+            }
+            
+            label {
+                font: normal normal normal 11px/13px Varela Round;
+                
+            }
+            .form-label{
+                margin-bottom: 0.3rem;
+                
+            }
+
+            input {
+                height: 36px;
+                margin-bottom: 0.9rem;
+            }
+
+            button {
+                font: normal normal normal 11px/13px Varela Round !important;
+                height: 33px !important;
+                color: #2823FD !important;
+            }
+
+
+
+        }

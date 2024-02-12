@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primaryColor: #0EE1DA;
+    --siteBackground: #E5EEFF;
+    --backgroundBox1: #020253;
+    --backgroundBox2: #8E097C;
+    --secondaryColor: #F9F9F9;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+div.mobileBoxItem1 {
+    display: none;
+}
+
+
+.grid-item {
+    box-shadow: 11px 10px 34px -16px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 11px 10px 34px -16px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 11px 10px 34px -16px rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.grid-item h1 {
+    color: var(--primaryColor);
+    font-size: 61px;
+    font-weight: bold;
+    font-family: 'Assistant', sans-serif;
+}
+
+.grid-item p {
+    max-width: 475px;
+    color: var(--secondaryColor);
+    font-size: 20px;
+    font-family: 'Assistant', sans-serif;
+    align-self: center;
+}
+
+.grid-container {
+    margin: 300px auto;
+    max-width: 1246px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(295px, 295px));
+    grid-auto-rows: 295px;
+    grid-gap: 20px;
+}
+
+
+.item1 {
+    background-color: var(--backgroundBox1);
+    grid-column: 1/3;
+    grid-row: 1/3;
+
+}
+
+.item16 {
+    justify-content: flex-start;
+    background-color: var(--backgroundBox2);
+    grid-column: auto/ span 2;
+    grid-row: 7/10;
+    padding: 20px;
+    font-family: 'Assistant', sans-serif;
+}
+
+.item16 textarea {
+    resize: none;
+    background-color: var(--siteBackground);
+    border-bottom: 5px solid var(--primaryColor);
+    height: 172px;
+    margin-bottom: 20px;
+
+
+}
+
+.item16 h2 {
+    margin-top: 63px;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+}
+
+.item16 p {
+    margin-top: 23px;
+    margin-bottom: 71px;
+    font-size: 20px;
+}
+
+.item16 label {
+    color: var(--primaryColor);
+    text-align: right;
+    font-weight: bold;
+    margin-bottom: 5px;
+
+}
+
+.item16 input[type=text] {
+    height: 60px;
+    border: 0px solid black;
+    background-color: var(--siteBackground);
+    border-bottom: 5px solid var(--primaryColor);
+}
+
+.marginInput1 {
+    margin-bottom: 31px;
+}
+
+.marginInput2 {
+    margin-bottom: 21px;
+}
+
+.item16 input[type=button] {
+    height: 60px;
+    font-family: Heebo;
+    background-color: var(--primaryColor);
+    font-size: 24px;
+    font-weight: bold;
+    border: 0px solid black;
+    color: #011560;
+}
+
+
+
+
+
+.item2 {
+    background-image: url(../images/Rectangle\ 514.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.item3 {
+    background-image: url(../images/Rectangle\ 515.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.item4 {
+    background-image: url(../images/Rectangle\ 506-5.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.item5 {
+    background-image: url(../images/Rectangle\ 516.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.item6 {
+    background-image: url(../images/Rectangle\ 506-1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.item7 {
+    background-image: url(../images/Rectangle\ 506-4.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.item8 {
+    background-image: url(../images/Rectangle\ 506-3.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.item9 {
+    background-image: url(../images/Rectangle\ 506-2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.item10 {
+    background-image: url(../images/Rectangle\ 506-7.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.item11 {
+    background-image: url(../images/Rectangle\ 506-8.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.item12 {
+    background-image: url(../images/Rectangle\ 506-6.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.item13 {
+    background-image: url(../images/Rectangle\ 506-9.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.item14 {
+    background-image: url(../images/Rectangle\ 506.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.item15 {
+    background-image: url(../images/Rectangle\ 513.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.form-container {}
+
+
+
+
+@media (min-width: 970px) {
+
+    .item16 {
+        grid-column: -3 / -1;
+        grid-row: 4 / 7;
+    }
+}
+
+
+
+
+@media screen and (max-width:630px) {
+    .grid-container {
+        grid-template-columns: repeat(2, minmax(50px, 159px));
+        grid-auto-rows: 146px;
+        grid-gap: 12px;
+        margin: 0 auto;
+    }
+
+    .item1 {
+        display: none;
+    }
+
+    div.mobileBoxItem1 {
+        display: flex;
+        margin: 0 auto;
+        max-width: 370px;
+        height: 340px;
+        background-color: var(--backgroundBox1);
+        margin-bottom: 22px;
+    }
+
+    div.mobileBoxItem1 h1 {
+        font-size: 36px;
+    }
+
+    div.mobileBoxItem1 p {
+        font-size: 20px;
+        max-width: 287px;
+    }
+
+
+
+
+
+
+
+
+
+        .item16 {
+            justify-content: flex-start;
+            grid-column: auto/ span 2;
+            grid-row: 5/9;
+            font-family: 'Assistant', sans-serif;
+        }
+    
+        .item16 textarea {
+            height: 95px;
+            margin-bottom: 11px;
+        }
+    
+        .item16 h2 {
+            margin-top: 58px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+    
+        .item16 p {
+            margin-top: 14px;
+            margin-bottom: 29px;
+            font-size: 15px;
+        }
+    
+        .item16 label {
+            font-size: 7px;
+            margin-bottom: 5px;
+    
+        }
+    
+        .item16 input[type=text] {
+            height: 33.25px;
+                border-bottom: 2.5px solid var(--primaryColor);
+        }
+    
+        .marginInput1 {
+            margin-bottom: 31px;
+        }
+    
+        .marginInput2 {
+            margin-bottom: 21px;
+        }
+    
+        .item16 input[type=button] {
+            height: 33px;
+            font-size: 12px;
+
+        }
+
+
+}

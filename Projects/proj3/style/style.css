@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --primaryColor: #FFFFFF;
+    --secondaryColor: #D31C75;
+    --containerColor: #1A1A1AD4;
+    --primaryFont: Heebo;
+}
+
+.background {
+    background-image: url("../images/backgorund.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100vw;
+}
+
+
+/* ============form================= */
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.space {
+    width: 568px;
+    height: 100px;
+}
+
+.form-container {
+    transition: 0.3s;
+    margin-top: 10%;
+    margin-right: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 569px;
+    min-width: 569px;
+    height: 643px;
+    background-color: var(--containerColor);
+    padding-top: 75px;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+
+label {
+    transition: 0.3s;
+    text-align: center;
+    font-family: var(--primaryFont);
+    color: var(--primaryColor);
+    text-align: right;
+    margin-bottom: 1px;
+}
+
+h1 {
+    text-align: center;
+    font-family: var(--primaryFont);
+    color: var(--primaryColor);
+    margin-bottom: 21px;
+    font-size: 36px;
+}
+
+p {
+    font-family: var(--primaryFont);
+    color: var(--primaryColor);
+    text-align: right;
+    margin-bottom: 44px;
+    font: normal normal normal 20px/29px Heebo;
+    font-weight: lighter;
+}
+
+input[type="text"] {
+    max-width: 418px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+input[type="button"] {
+    margin: 15px 0;
+    border: none;
+    width: 161px;
+    height: 50px;
+    background-color: var(--secondaryColor);
+    font: normal normal bold 22px/30px Heebo;
+    letter-spacing: 0.33px;
+    color: #FFFFFF;
+}
+
+
+@media screen and (min-width: 1700px) {
+
+    .background {
+        height: 590px;
+        background-size: cover;
+    }
+
+    .form-container {
+        margin-top: 157px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    .background {
+        height: 213px;
+        background-size: cover;
+    }
+
+    .container {
+        justify-content: center;
+    }
+
+
+    .form-container {
+        margin-top: 0%;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: 89px;
+        max-width: 298px;
+        min-width: 229px;
+        height: 440px;
+        padding-top: 35px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .space {
+        display: none;
+    }
+
+    h1 {
+        margin: 0 auto;
+        margin-bottom: 12px;
+        font-size: 25px;
+        max-width: 146px;
+    }
+
+    input[type="text"] {
+        height: 27px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        margin: 0 auto;
+        font-size: 15px;
+        margin-bottom: 22px;
+    }
+
+    input[type="button"] {
+        width: 76px;
+        height: 33px;
+        font-size: 15px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+
+}
