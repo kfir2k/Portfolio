@@ -117,8 +117,47 @@ console.log("--------", projItemsArray);
 const realArrayFromItems = Array.from(projItemsArray)
 
 const landingPage1 = {
-    imgSrc: "./images/proj2.jpg",
+    imgSrc: "./images/proj1.jpg",
     title: "Landing page 1",
+    zipFile: "zip -=-==-=-=-test",
+    liveDemoLink: "live test",
+    gitLink: "git test",
+}
+
+const landingPage2 = {
+    imgSrc: "./images/proj2.jpg",
+    title: "Landing page 2",
+    zipFile: "zip -=-==-=-=-test",
+    liveDemoLink: "live test",
+    gitLink: "git test",
+}
+
+const landingPage3 = {
+    imgSrc: "./images/proj3.jpg",
+    title: "Landing page 3",
+    zipFile: "zip -=-==-=-=-test",
+    liveDemoLink: "live test",
+    gitLink: "git test",
+}
+
+const landingPage4 = {
+    imgSrc: "./images/proj4.jpg",
+    title: "Landing page 3",
+    zipFile: "zip -=-==-=-=-test",
+    liveDemoLink: "live test",
+    gitLink: "git test",
+}
+const landingPage5 = {
+    imgSrc: "./images/proj5.jpg",
+    title: "Landing page 3",
+    zipFile: "zip -=-==-=-=-test",
+    liveDemoLink: "live test",
+    gitLink: "git test",
+}
+
+const landingPage6 = {
+    imgSrc: "./images/proj6preview.jpg",
+    title: "Landing page 3",
     zipFile: "zip -=-==-=-=-test",
     liveDemoLink: "live test",
     gitLink: "git test",
@@ -128,11 +167,15 @@ function renderItemModal(itemObject) {
 
 
     const links = modalContent.querySelectorAll("a")
+    const projImg = modalContent.querySelectorAll("img")
+    const title = modalContent.querySelectorAll("h3")
     console.log("links", links);
     console.log("=====", itemObject.zipFile);
     links[0].href = itemObject.zipFile
     links[1].href = itemObject.liveDemoLink
     links[2].href = itemObject.gitLink
+    projImg[0].src = itemObject.imgSrc
+    title[0].innerText = itemObject.title
 
 }
 
@@ -141,27 +184,33 @@ function renderItemModal(itemObject) {
 
 
 function openModalPreviewProjects() {
-    // modal.style.display = "block"
+
     document.querySelectorAll(['section', '#hero-image-container']).forEach((el) => { el.style.filter = "blur(5px)" })
-    // Set the display to block with a transition effect
-    modal.style.opacity = "0"; // Initially hide the modal
+    modal.style.opacity = "0";
     modal.style.display = "block";
-
-    // Trigger reflow before adding the transition class
-    void modal.offsetWidth; // This line forces the browser to trigger a reflow, enabling the transition
-
-    // Apply transition effect
+    void modal.offsetWidth;
     modal.style.transition = "opacity 0.5s ease"; // Adjust the duration and easing as needed
-
-    // Set opacity to 1 to reveal the modal smoothly
     modal.style.opacity = "1";
-
-
 
     const clickedItemIndex = realArrayFromItems.indexOf(this)
     console.log("clicked index", clickedItemIndex);
     if (clickedItemIndex === 0) {
         renderItemModal(landingPage1)
+    }
+    if (clickedItemIndex === 1) {
+        renderItemModal(landingPage2)
+    }
+    if (clickedItemIndex === 2) {
+        renderItemModal(landingPage3)
+    }
+    if (clickedItemIndex === 3) {
+        renderItemModal(landingPage4)
+    }
+    if (clickedItemIndex === 4) {
+        renderItemModal(landingPage5)
+    }
+    if (clickedItemIndex === 5) {
+        renderItemModal(landingPage6)
     }
 }
 
