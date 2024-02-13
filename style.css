@@ -220,16 +220,9 @@ p {
 /*my knowlege section ===============================================*/
 
 section {
-	/* background-color: red; */
-
 	margin: 0px auto;
 	margin-bottom: 30px;
 	max-width: 1200px;
-	/*height: 600px;*/
-	/*background-color: rgba(228, 228, 228, 0.436);*/
-
-
-
 }
 
 
@@ -241,29 +234,22 @@ h4 {
 }
 
 section h3 {
-
 	font-weight: 500;
 	text-align: center;
 	font-size: 2em;
 	margin-bottom: 30px;
 	letter-spacing: 0.1em;
-
-
 }
 
 
 section p {
-
 	font-weight: 500;
 	text-align: center;
 	font-size: 1.2em;
-
 	padding-right: 150px;
 	padding-left: 150px;
 	margin-bottom: 30px;
 	text-align: center;
-
-
 }
 
 
@@ -620,6 +606,7 @@ footer p {
 
 
 #modal {
+	display: none;
 	position: fixed;
 	z-index: 999;
 	left: 0;
@@ -675,6 +662,21 @@ footer p {
 	right: 0;
 	top: 0;
 
+}
+
+
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 
@@ -930,6 +932,19 @@ footer p {
 	.right-loading-bar,
 	.left-loading-bar {
 		width: 100%;
+	}
+
+
+
+	#modalContentContainer {
+		flex-direction: column;
+	}
+
+	#modal img {
+		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+		width: 40%;
+
+
 	}
 
 
