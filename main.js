@@ -72,16 +72,20 @@ projItemsArray.forEach((item) => item.addEventListener("click", openModalPreview
 console.log("--------", projItemsArray);
 
 
-const landingPage1 = `
+const landingPage1 = {
+    imgSrc: "./images/proj2.jpg",
+    title: "Landing page 1",
+    zipFile: "",
+    liveDemoLink: "",
+    gitLink: "",
+
+}
 
 
-`
 
+function openModalPreviewProjects() {
 
-
-function openModalPreviewProjects(){
-
-
+    console.log(this);
 
 }
 
