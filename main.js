@@ -119,60 +119,64 @@ const realArrayFromItems = Array.from(projItemsArray)
 const landingPage1 = {
     imgSrc: "./images/proj1.jpg",
     title: "Landing page 1",
-    zipFile: "zip -=-==-=-=-test",
-    liveDemoLink: "live test",
-    gitLink: "git test",
+    zipFile: "./Projects/proj1/proj1.zip",
+    liveDemoLink: "./Projects/proj1/index.html",
+    gitLink: "",
 }
 
 const landingPage2 = {
     imgSrc: "./images/proj2.jpg",
     title: "Landing page 2",
-    zipFile: "zip -=-==-=-=-test",
-    liveDemoLink: "live test",
-    gitLink: "git test",
+    zipFile: "./Projects/proj2/proj2.zip",
+    liveDemoLink: "./Projects/proj2/index.html",
+    gitLink: "",
 }
 
 const landingPage3 = {
     imgSrc: "./images/proj3.jpg",
     title: "Landing page 3",
-    zipFile: "zip -=-==-=-=-test",
-    liveDemoLink: "live test",
-    gitLink: "git test",
+    zipFile: "./Projects/proj3/proj3.zip",
+    liveDemoLink: "./Projects/proj3/index.html",
+    gitLink: "",
 }
 
 const landingPage4 = {
     imgSrc: "./images/proj4.jpg",
-    title: "Landing page 3",
-    zipFile: "zip -=-==-=-=-test",
-    liveDemoLink: "live test",
-    gitLink: "git test",
+    title: "Landing page 4",
+    zipFile: "./Projects/proj4/proj4.zip",
+    liveDemoLink: "./Projects/proj4/index.html",
+    gitLink: "",
 }
 const landingPage5 = {
     imgSrc: "./images/proj5.jpg",
-    title: "Landing page 3",
-    zipFile: "zip -=-==-=-=-test",
-    liveDemoLink: "live test",
-    gitLink: "git test",
+    title: "Landing page 5",
+    zipFile: "./Projects/proj5/proj5.zip",
+    liveDemoLink: "./Projects/proj5/index.html",
+    gitLink: "",
 }
 
 const landingPage6 = {
     imgSrc: "./images/proj6preview.jpg",
-    title: "Landing page 3",
-    zipFile: "zip -=-==-=-=-test",
-    liveDemoLink: "live test",
-    gitLink: "git test",
+    title: "Landing page 6",
+    zipFile: "./Projects/proj6/proj6.zip",
+    liveDemoLink: "./Projects/proj6/index.html",
+    gitLink: "",
 }
 
 function renderItemModal(itemObject) {
-
+    console.log("ITEMS", itemObject.gitLink);
 
     const links = modalContent.querySelectorAll("a")
     const projImg = modalContent.querySelectorAll("img")
     const title = modalContent.querySelectorAll("h3")
-    console.log("links", links);
-    console.log("=====", itemObject.zipFile);
+
     links[0].href = itemObject.zipFile
     links[1].href = itemObject.liveDemoLink
+    
+    if (itemObject.gitLink === "") {
+        links[2].style.display = "none"
+    }
+    
     links[2].href = itemObject.gitLink
     projImg[0].src = itemObject.imgSrc
     title[0].innerText = itemObject.title
