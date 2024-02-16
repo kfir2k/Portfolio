@@ -162,6 +162,14 @@ const landingPage6 = {
     liveDemoLink: "./Projects/proj6/index.html",
     gitLink: "",
 }
+const landingPage7 = {
+    imgSrc: "./projects/timer/timer.jpg",
+    title: "Stop Watch",
+    zipFile: "./Projects/timer/timer.zip",
+    liveDemoLink: "https://kfir2k.github.io/Timer-project/",
+    gitLink: "https://github.com/kfir2k/Timer-project.git",
+}
+
 
 function renderItemModal(itemObject) {
     console.log("ITEMS", itemObject.gitLink);
@@ -215,6 +223,9 @@ function openModalPreviewProjects() {
     }
     if (clickedItemIndex === 5) {
         renderItemModal(landingPage6)
+    }
+    if (clickedItemIndex === 6) {
+        renderItemModal(landingPage7)
     }
 }
 

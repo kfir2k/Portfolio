@@ -440,9 +440,16 @@ section p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #5fc2ff;
+	/*background-color: #5fc2ff;*/
 	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
+}
+
+#appsGallery .item:nth-child(1){
+	background-image: url(./Projects/Timer/Timer.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
 }
 
 
@@ -452,6 +459,7 @@ section p {
 	/*object-fit: fill;*/
 	/*max-width: 135%;*/
 	/*height: auto;*/
+
 }
 
 
