@@ -170,6 +170,43 @@ const landingPage7 = {
     gitLink: "https://github.com/kfir2k/Timer-project.git",
 }
 
+const landingPage8 = {
+    imgSrc: "./projects/list/list.jpg",
+    title: "Grocery-List",
+    zipFile: "./projects/list/GroceryList.zip",
+    liveDemoLink: "https://kfir2k.github.io/Grocery-List/",
+    gitLink: "https://github.com/kfir2k/Grocery-List.git",
+}
+const landingPage9 = {
+    imgSrc: "./Projects/ElementCreator/elementCreator.jpg",
+    title: "Element Creator",
+    zipFile: "./Projects/ElementCreator/ElementCreator.zip",
+    liveDemoLink: "https://kfir2k.github.io/ElementCreator/",
+    gitLink: "https://github.com/kfir2k/ElementCreator.git",
+}
+const landingPage10 = {
+    imgSrc: "./Projects/Simon/simon.jpg",
+    title: "Simon",
+    zipFile: "./Projects/Simon/simon.zip",
+    liveDemoLink: "https://kfir2k.github.io/Simon-Says/",
+    gitLink: "https://github.com/kfir2k/Simon-Says.git",
+}
+const landingPage11 = {
+    imgSrc: "./Projects/UserManagement/user.jpg",
+    title: "User-Management",
+    zipFile: "./Projects/UserManagement/user.zip",
+    liveDemoLink: "https://kfir2k.github.io/User-Management/",
+    gitLink: "https://github.com/kfir2k/User-Management.git",
+}
+
+
+
+
+
+
+
+
+
 
 function renderItemModal(itemObject) {
     console.log("ITEMS", itemObject.gitLink);
@@ -183,6 +220,8 @@ function renderItemModal(itemObject) {
     
     if (itemObject.gitLink === "") {
         links[2].style.display = "none"
+    } else {
+        links[2].style.display = "block"
     }
     
     links[2].href = itemObject.gitLink
@@ -226,6 +265,18 @@ function openModalPreviewProjects() {
     }
     if (clickedItemIndex === 6) {
         renderItemModal(landingPage7)
+    }
+    if (clickedItemIndex === 7) {
+        renderItemModal(landingPage8)
+    }
+    if (clickedItemIndex === 8) {
+        renderItemModal(landingPage9)
+    }
+    if (clickedItemIndex === 9) {
+        renderItemModal(landingPage10)
+    }
+    if (clickedItemIndex === 10) {
+        renderItemModal(landingPage11)
     }
 }
 
