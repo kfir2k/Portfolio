@@ -165,7 +165,7 @@ const landingPage6 = {
 const landingPage7 = {
     imgSrc: "./Projects/Timer/Timer.jpg",
     title: "Stop Watch",
-    zipFile: "./Projects/timer/timer.zip",
+    zipFile: "./Projects/Timer/Timer.zip",
     liveDemoLink: "https://kfir2k.github.io/Timer-project/",
     gitLink: "https://github.com/kfir2k/Timer-project.git",
 }
@@ -173,7 +173,7 @@ const landingPage7 = {
 const landingPage8 = {
     imgSrc: "./Projects/List/list.jpg",
     title: "Grocery-List",
-    zipFile: "./projects/list/GroceryList.zip",
+    zipFile: "./Projects/List/GroceryList.zip",
     liveDemoLink: "https://kfir2k.github.io/Grocery-List/",
     gitLink: "https://github.com/kfir2k/Grocery-List.git",
 }
@@ -187,7 +187,7 @@ const landingPage9 = {
 const landingPage10 = {
     imgSrc: "./Projects/Simon/simon.jpg",
     title: "Simon",
-    zipFile: "./Projects/Simon/simon.zip",
+    zipFile: "./Projects/Simon/Simon.zip",
     liveDemoLink: "https://kfir2k.github.io/Simon-Says/",
     gitLink: "https://github.com/kfir2k/Simon-Says.git",
 }
@@ -200,7 +200,7 @@ const landingPage11 = {
 }
 const landingPage12 = {
     imgSrc: "./Projects/fifa/fifa.jpg",
-    title: `FIFA Squad Builder <p> NO CORS IN BROWSER NEEDED <p/>`,
+    title: `FIFA Squad Builder`,
     zipFile: "./Projects/UserManagement/user.zip",
     liveDemoLink: "https://kfir2k.github.io/FIFASquadCreator/",
     gitLink: "https://github.com/kfir2k/FIFASquadCreator.git",
@@ -221,6 +221,9 @@ function renderItemModal(itemObject) {
     const links = modalContent.querySelectorAll("a")
     const projImg = modalContent.querySelectorAll("img")
     const title = modalContent.querySelectorAll("h3")
+    const par = modalContent.querySelectorAll("p")
+
+    par[0].style.display = "none"
 
     links[0].href = itemObject.zipFile
     links[1].href = itemObject.liveDemoLink
@@ -230,6 +233,13 @@ function renderItemModal(itemObject) {
     } else {
         links[2].style.display = "block"
     }
+
+    
+    if (itemObject.title === "FIFA Squad Builder") {
+        par[0].style.display = "block"
+    }
+  
+
     
     links[2].href = itemObject.gitLink
     projImg[0].src = itemObject.imgSrc

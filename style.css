@@ -513,7 +513,18 @@ section p {
 	background-position: center;
 	background-size: cover;
 }
+#appsGallery .item:nth-child(6) {
+	background-image: url(./Projects/fifa/fifa.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
 
+
+#modalContent p {
+	display: none;
+	font-size: 16px;
+}
 
 
 
