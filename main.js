@@ -198,6 +198,13 @@ const landingPage11 = {
     liveDemoLink: "https://kfir2k.github.io/User-Management/",
     gitLink: "https://github.com/kfir2k/User-Management.git",
 }
+const landingPage12 = {
+    imgSrc: "./Projects/fifa/fifa.jpg",
+    title: `FIFA Squad Builder <p> NO CORS IN BROWSER NEEDED <p/>`,
+    zipFile: "./Projects/UserManagement/user.zip",
+    liveDemoLink: "https://kfir2k.github.io/FIFASquadCreator/",
+    gitLink: "https://github.com/kfir2k/FIFASquadCreator.git",
+}
 
 
 
@@ -277,6 +284,9 @@ function openModalPreviewProjects() {
     }
     if (clickedItemIndex === 10) {
         renderItemModal(landingPage11)
+    }
+    if (clickedItemIndex === 11) {
+        renderItemModal(landingPage12)
     }
 }
 
