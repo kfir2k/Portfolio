@@ -5,7 +5,7 @@
 	font-family: var(--primary-font);
 	scroll-behavior: smooth;
 
-
+	
 
 	-webkit-user-select: none;
 	-ms-user-select: none;
@@ -14,6 +14,91 @@
 
 
 
+}
+
+
+svg{
+	fill: var(--main-text-color)
+}
+
+
+:root {
+	--main-text-color: rgb(216, 0, 0);
+	--primary-font: 'Assistant', sans-serif;
+	--primaryColor: white;
+	--primaryColorLessStrongWhite: rgb(250, 250, 250);;
+
+}
+
+
+.primaryShadow{
+box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+
+.secondaryShadow{
+
+}
+
+
+
+
+body{
+	background-color: var(--primaryColor);
+}
+
+
+
+
+
+
+
+
+
+
+.container {
+
+
+	right: 20px;
+	bottom: 10px;
+	position: fixed;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	transform: scale(0.7);
+	/*height: 100vh;*/
+}
+
+.container p{
+	font-size: 15px;
+		color: var(--main-text-color);
+}
+
+.toggle-btn {
+	width: 80px;
+	height: 40px;
+	background-color: gray;
+	border-radius: 30px;
+	padding: 5px;
+	transition: all .3s ease-in-out;
+}
+
+.toggle-btn > .inner-circle {
+	width: 30px;
+	height: 30px;
+	background-color: #ffffff;
+	border-radius: 50%;
+	transition: all 300ms ease-in-out;
+}
+
+.toggle-btn.active {
+	background-color: #009ad6;
+}
+
+.toggle-btn.active > .inner-circle {
+	margin-left: 40px;
 }
 
 
@@ -45,13 +130,11 @@ sans-serif;
 
 
 
-:root {
-	--main-text-color: black;
-	--primary-font: 'Assistant', sans-serif;
-}
+
 
 #header {
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+	
 	position: fixed;
 	width: 100vw;
 	transition: background 1s ease;
@@ -156,6 +239,7 @@ nav > ul > li > a:active {
 
 
 	/*background-color: red;s*/
+	color: var(--main-text-color);
 	margin: 0 auto;
 	padding-left: 30px;
 	padding-top: 100px;
@@ -199,6 +283,9 @@ p {
 
 
 
+
+
+
 .navbar-icon {
 
 	width: 0px;
@@ -211,12 +298,14 @@ p {
 
 
 #myLogo {
+	/*filter: invert(100%);  NEED TO CHANGE FOR DARK MODE*/
 	width: 30px;
 	margin-left: 15px;
 	margin-right: 15px;
 }
 
 #myLogo1 {
+	
 	width: 30px;
 	margin-left: 15px;
 	margin-right: 15px;
@@ -267,14 +356,15 @@ section {
 }
 
 
-#knowledge {}
 
 h4 {
+		color: var(--main-text-color);
 	font-size: 1.5em;
 	font-weight: 400;
 }
 
 section h3 {
+		color: var(--main-text-color);
 	font-weight: 500;
 	text-align: center;
 	font-size: 2em;
@@ -284,6 +374,7 @@ section h3 {
 
 
 section p {
+		color: var(--main-text-color);
 	font-weight: 500;
 	text-align: center;
 	font-size: 1.2em;
@@ -408,8 +499,8 @@ section p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #ffffff;
-	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	background-color: var(--primaryColor);
+
 
 }
 
@@ -465,7 +556,8 @@ section p {
 }
 
 #appsGallery .item {
-	border: 1px solid #e4e4e4;
+	
+	/*border: 1px solid #e4e4e4;*/
 	border-radius: 10px;
 	width: 125px;
 	height: 125px;
@@ -474,8 +566,6 @@ section p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/*background-color: #5fc2ff;*/
-	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
 }
 
@@ -560,7 +650,7 @@ section p {
 .graySection {
 
 	padding: 32px;
-	background-color: rgb(250, 250, 250);
+	background-color: var(--primaryColorLessStrongWhite);
 	/*background-color: rgb(240, 240, 240);*/
 }
 
@@ -575,8 +665,6 @@ section p {
 
 .form {
 
-	box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
-	/* background-color: #5fc2ff; */
 	display: flex;
 	text-align: center;
 	flex-direction: row;
@@ -600,6 +688,7 @@ form {
 }
 
 label {
+		color: var(--main-text-color);
 	margin: 10px 0px;
 	font-family: var(--primary-font);
 	font-size: 1em;
@@ -608,28 +697,30 @@ label {
 form input[type=text],
 input[type=email] {
 	height: 40px;
-	background-color: whitesmoke;
+	background-color: var(--primaryColorLessStrongWhite);
+	color: var(--main-text-color);
 	border: 0;
 }
 
 textarea {
 
 	height: 100px;
-	background-color: whitesmoke;
+	background-color: var(--primaryColorLessStrongWhite);
+	color: var(--main-text-color);
 	resize: none;
 	border: 0;
 
 
 }
 
-input[type=submit] {
+input[type=button] {
 	height: 60px;
 	margin: 10px 0px;
 	transition: 1s;
 	border: 0;
 }
 
-input[type=submit]:hover {
+input[type=button]:hover {
 	background-color: #777777;
 	/* transition: 1s; */
 }
@@ -644,10 +735,10 @@ input[type=submit]:hover {
 
 
 
-
 footer {
+	color: var(--main-text-color);
 	/* height: 300px; */
-	background-color: #f9f9f9;
+	background-color: var(--primaryColorLessStrongWhite);
 	/* Set your desired footer background color */
 	padding: 20px;
 	text-align: center;
@@ -679,6 +770,7 @@ footer {
 }
 
 footer p {
+	color: var(--primary-font);
 	margin: 0;
 	font-size: 14px;
 }
@@ -703,7 +795,7 @@ footer p {
 #modalContent {
 	position: relative;
 
-	background-color: #fefefe;
+	background-color: var(--primaryColor);
 	margin: 150px 150px;
 	padding: 10px;
 }
@@ -732,9 +824,16 @@ footer p {
 }
 
 #modalContent h3 {
+	color: var(--main-text-color);
 	font-size: 48px;
 	font-weight: 200;
 	margin-bottom: 20px;
+
+}
+
+#modalContent p {
+	color: var(--main-text-color);
+
 
 }
 
@@ -764,13 +863,13 @@ footer p {
 
 
 #modal img {
-	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 	width: 500px;
 
 
 }
 
 #modal a {
+	
 	display: block;
 	width: 150px;
 	text-decoration: none;
@@ -830,7 +929,6 @@ footer p {
 
 
 	#modal img {
-		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 		width: 250px;
 
 
@@ -849,17 +947,6 @@ footer p {
 		margin-top: 100px;
 		height: 50%;
 	}
-
-
-	/*#modal img {
-		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-		width: 40%;
-
-
-	}*/
-
-
-
 
 
 }
@@ -887,6 +974,7 @@ footer p {
 	}
 
 	h4 {
+		color: var(--main-text-color);
 		font-size: 1.2em;
 		font-weight: 400;
 	}
@@ -907,7 +995,7 @@ footer p {
 	nav > ul {
 		width: 100vw;
 		height: 100vh;
-		background-color: #ffffff;
+		background-color: var(--primaryColor);
 		display: none;
 		margin-top: 0px;
 		flex-direction: column;
@@ -937,7 +1025,7 @@ footer p {
 
 
 	nav {
-		background-color: white;
+			background-color: var(--primaryColor);
 		flex-direction: column;
 		font-size: 1em;
 		/* align-items: flex-start; */
@@ -987,7 +1075,6 @@ footer p {
 		visibility: visible;
 	}
 
-	#hero-image-container {}
 
 	#hero-text-container {
 
@@ -1010,11 +1097,6 @@ footer p {
 	}
 
 	#hero-image {
-		/*max-width: 1200px;*/
-		/* width: 100vw; */
-		/*margin-right: 100px;
-		margin-left: 100px;*/
-		/*box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;*/
 		height: 500px;
 		font-family: var(--primary-font), ;
 		margin-bottom: 0;
@@ -1055,7 +1137,6 @@ footer p {
 
 
 	#modal img {
-		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 		width: 40%;
 
 

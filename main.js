@@ -1,5 +1,32 @@
 // ===================Website ui ================
 
+ let backgroundVANTA = VANTA.NET({
+        el: "#hero-image",
+    })
+backgroundVANTA.resize()
+backgroundVANTA.setOptions({
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    color: 0xffffff,
+    backgroundColor: 0xc5c5c5,
+    points: 17.00,
+    maxDistance: 25.00,
+    spacing: 17.00,
+    showDots: false
+})
+console.log(backgroundVANTA);
+
+//VANTA.NET(heroImageDarkMode)
+
+
+
+
+
 //console.log("test");
 window.addEventListener("scroll", animationStart)
 window.addEventListener("DOMContentLoaded", animationStart)
@@ -8,6 +35,9 @@ window.addEventListener("scroll", knowlegeController)
 const modalContent = document.getElementById("modalContent")
 const modal = document.getElementById("modal")
 const closeModalBtn = document.querySelectorAll(".close")
+const myLogo = document.getElementById("myLogo")
+const allBoxShadows = document.querySelectorAll(".primaryShadow")
+let isDarkMode = false
 console.log("closeModalBtn", closeModalBtn);
 
 window.onclick = function (event) {
@@ -50,18 +80,120 @@ closeModalBtn[0].onclick = function (event) {
 }
 
 
+
+function changeRootVariables(isDarkMode) {
+    // Access the root element
+    console.log("In there");
+    let root = document.documentElement;
+    if (isDarkMode) {
+        root.style.setProperty('--primaryColor', '#0b0b16');
+        root.style.setProperty('--main-text-color', 'whitesmoke');
+        root.style.setProperty('--primaryColorLessStrongWhite', 'rgb(6, 6, 12)');
+        myLogo.style.filter = "invert(100%)"
+        allBoxShadows.forEach((item) => item.classList.remove("primaryShadow"))
+    } else {
+        root.style.setProperty('--primaryColor', 'white');
+        root.style.setProperty('--main-text-color', 'black');
+        root.style.setProperty('--primaryColorLessStrongWhite', 'rgb(250, 250, 250)');
+        myLogo.style.filter = "invert(0%)"
+        allBoxShadows.forEach((item) => item.classList.add("primaryShadow"))
+    }
+
+}
+
+
+
+
+
+
+const darkModeBtn = document.querySelector(".toggle-btn");
+const innerCircle = document.querySelector(".inner-circle")
+let isInnerCircleColor = false
+darkModeBtn.addEventListener("click", () => {
+    if (!isInnerCircleColor) {
+        innerCircle.style.backgroundColor = "black"
+        changeRootVariables(true)
+        backgroundVANTA.setOptions({
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x83ff,
+            backgroundColor: 0xb0b16,
+            showDots: false
+        });
+
+        isInnerCircleColor = true
+    } else {
+        isInnerCircleColor = false
+        innerCircle.style.backgroundColor = "white"
+        changeRootVariables(false)
+        backgroundVANTA.setOptions({
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0xffffff,
+            backgroundColor: 0xc5c5c5,
+            points: 17.00,
+            maxDistance: 25.00,
+            spacing: 17.00,
+            showDots: false
+        })
+    
+    }
+    darkModeBtn.classList.toggle("active");
+    
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function animationStart() {
 
     //console.log("scroll ev", window.scrollY);
 
-    switch (true) {
-        case window.scrollY === 0:
-            document.getElementById("header").style.background = 'rgba(0,0,0,0.0)';
-            break;
-        case window.scrollY > 90:
-            document.getElementById("header").style.background = 'rgba(250,250,250,0.9)';
-            break;
+    if (!window.matchMedia("(max-width: 600px)").matches) {
+
+        switch (true) {
+            case window.scrollY === 0:
+                document.getElementById("header").style.background = 'rgba(0,0,0,0.0)';
+                break;
+            case window.scrollY > 90:
+                if (isInnerCircleColor) {
+                    document.getElementById("header").style.background = 'rgba(11, 11, 22, 0.9)';
+                } else {
+                    document.getElementById("header").style.background = 'rgba(250,250,250,0.9)';
+                }
+
+
+
+                break;
+        }
+
     }
+ 
 }
 
 let progressBarExecuted = false;
@@ -108,12 +240,12 @@ function progressBar(el, precent) {
 }
 
 
-
+ 
 
 
 const projItemsArray = document.querySelectorAll('.item')
 projItemsArray.forEach((item) => item.addEventListener("click", openModalPreviewProjects))
-console.log("--------", projItemsArray);
+
 const realArrayFromItems = Array.from(projItemsArray)
 
 const landingPage1 = {
