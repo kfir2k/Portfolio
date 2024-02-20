@@ -163,7 +163,7 @@ const landingPage6 = {
     gitLink: "",
 }
 const landingPage7 = {
-    imgSrc: "./projects/Timer/Timer.jpg",
+    imgSrc: "./Projects/Timer/Timer.jpg",
     title: "Stop Watch",
     zipFile: "./Projects/timer/timer.zip",
     liveDemoLink: "https://kfir2k.github.io/Timer-project/",
@@ -171,7 +171,7 @@ const landingPage7 = {
 }
 
 const landingPage8 = {
-    imgSrc: "./projects/List/list.jpg",
+    imgSrc: "./Projects/List/list.jpg",
     title: "Grocery-List",
     zipFile: "./projects/list/GroceryList.zip",
     liveDemoLink: "https://kfir2k.github.io/Grocery-List/",
