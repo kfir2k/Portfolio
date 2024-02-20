@@ -117,7 +117,7 @@ console.log("--------", projItemsArray);
 const realArrayFromItems = Array.from(projItemsArray)
 
 const landingPage1 = {
-    imgSrc: "./images/proj1.jpg",
+    imgSrc: "./images/proj1preview.jpg",
     title: "Landing page 1",
     zipFile: "./Projects/proj1/proj1.zip",
     liveDemoLink: "./Projects/proj1/index.html",
@@ -163,7 +163,7 @@ const landingPage6 = {
     gitLink: "",
 }
 const landingPage7 = {
-    imgSrc: "./projects/timer/timer.jpg",
+    imgSrc: "./Projects/Timer/Timer.jpg",
     title: "Stop Watch",
     zipFile: "./Projects/timer/timer.zip",
     liveDemoLink: "https://kfir2k.github.io/Timer-project/",
@@ -171,7 +171,7 @@ const landingPage7 = {
 }
 
 const landingPage8 = {
-    imgSrc: "./projects/list/list.jpg",
+    imgSrc: "./Projects/List/list.jpg",
     title: "Grocery-List",
     zipFile: "./projects/list/GroceryList.zip",
     liveDemoLink: "https://kfir2k.github.io/Grocery-List/",
