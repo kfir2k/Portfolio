@@ -117,7 +117,7 @@ console.log("--------", projItemsArray);
 const realArrayFromItems = Array.from(projItemsArray)
 
 const landingPage1 = {
-    imgSrc: "./images/proj1.jpg",
+    imgSrc: "./images/proj1preview.jpg",
     title: "Landing page 1",
     zipFile: "./Projects/proj1/proj1.zip",
     liveDemoLink: "./Projects/proj1/index.html",
