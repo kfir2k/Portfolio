@@ -87,7 +87,7 @@ function changeRootVariables(isDarkMode) {
     let root = document.documentElement;
     if (isDarkMode) {
         // root.style.setProperty('--primaryColor', '#0b0b16');
-        root.style.setProperty('--primaryColor', '#17172e');
+        root.style.setProperty('--primaryColor', '#101021');
         root.style.setProperty('--main-text-color', 'whitesmoke');
         // root.style.setProperty('--primaryColorLessStrongWhite', 'rgb(6, 6, 12)');
         root.style.setProperty('--primaryColorLessStrongWhite', 'rgb(12, 12, 24)');
