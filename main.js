@@ -126,7 +126,7 @@ const innerCircle = document.querySelector(".inner-circle")
 let isInnerCircleColor = false
 darkModeBtn.addEventListener("click", () => {
     if (!isInnerCircleColor) {
-        innerCircle.style.backgroundColor = "black"
+        innerCircle.style.backgroundColor = "#101021"
         changeRootVariables(true)
         backgroundVANTA.setOptions({
             mouseControls: true,
