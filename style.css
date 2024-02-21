@@ -177,7 +177,7 @@ input[type=checkbox] {
 nav {
 	/*border: 2px solid black;*/
 	flex-direction: row-reverse;
-	max-width: 1200px;
+	/*max-width: 1200px;*/
 	display: flex;
 	height: 70px;
 	list-style: none;
@@ -852,6 +852,7 @@ footer p {
 }
 
 #modalContent h3 {
+	margin: 15px;
 	color: var(--main-text-color);
 	font-size: 48px;
 	font-weight: 200;
@@ -867,7 +868,7 @@ footer p {
 
 #modalContent .close {
 	position: absolute;
-	font-size: 20px;
+	font-size: 30px;
 	width: 30px;
 	right: 0;
 	top: 0;
@@ -983,11 +984,11 @@ footer p {
 @media screen and (max-width: 600px) {
 
 	.form{
-		padding: 0
+		padding: 5px
 	}
 
 		form{
-			width: 90%;
+			width: 80%;
 		}
 
 
@@ -1179,7 +1180,7 @@ footer p {
 
 
 	#modal img {
-		width: 40%;
+		width: 60%;
 
 
 	}

@@ -96,9 +96,10 @@ function changeRootVariables(isDarkMode) {
         myLogo.style.filter = "invert(100%)"
         mobileMyLogo.style.filter = "invert(100%)"
         modal.style.backgroundColor = "#101021cb"
-
+        document.getElementById("header").style.background = 'rgba(11, 11, 22, 0.9)';
         allBoxShadows.forEach((item) => item.classList.remove("primaryShadow"))
     } else {
+        document.getElementById("header").style.background = 'rgba(250,250,250,0.9)';
         modal.style.backgroundColor = "rgba(214, 214, 214, 0.5)"
         root.style.setProperty('--hoverColorProjects', '#ffffffe0');
         root.style.setProperty('--btnColor', '#d3d3d3');
