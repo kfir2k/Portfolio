@@ -36,6 +36,7 @@ const modalContent = document.getElementById("modalContent")
 const modal = document.getElementById("modal")
 const closeModalBtn = document.querySelectorAll(".close")
 const myLogo = document.getElementById("myLogo")
+const mobileMyLogo = document.getElementById("mobileMylogo")
 const allBoxShadows = document.querySelectorAll(".primaryShadow")
 let isDarkMode = false
 console.log("closeModalBtn", closeModalBtn);
@@ -86,19 +87,30 @@ function changeRootVariables(isDarkMode) {
     console.log("In there");
     let root = document.documentElement;
     if (isDarkMode) {
-        // root.style.setProperty('--primaryColor', '#0b0b16');
+
+        root.style.setProperty('--hoverColorProjects', '#101021cb');
         root.style.setProperty('--primaryColor', '#101021');
+        root.style.setProperty('--btnColor', '#424289');
         root.style.setProperty('--main-text-color', 'whitesmoke');
-        // root.style.setProperty('--primaryColorLessStrongWhite', 'rgb(6, 6, 12)');
         root.style.setProperty('--primaryColorLessStrongWhite', 'rgb(12, 12, 24)');
         myLogo.style.filter = "invert(100%)"
+        mobileMyLogo.style.filter = "invert(100%)"
+        modal.style.backgroundColor = "#101021cb"
+
         allBoxShadows.forEach((item) => item.classList.remove("primaryShadow"))
     } else {
+        modal.style.backgroundColor = "rgba(214, 214, 214, 0.5)"
+        root.style.setProperty('--hoverColorProjects', '#ffffffe0');
+        root.style.setProperty('--btnColor', '#d3d3d3');
         root.style.setProperty('--primaryColor', 'white');
         root.style.setProperty('--main-text-color', 'black');
         root.style.setProperty('--primaryColorLessStrongWhite', 'rgb(250, 250, 250)');
         myLogo.style.filter = "invert(0%)"
+        mobileMyLogo.style.filter = "invert(0%)"
         allBoxShadows.forEach((item) => item.classList.add("primaryShadow"))
+
+
+
     }
 
 }

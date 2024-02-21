@@ -18,14 +18,18 @@
 
 
 svg {
-	fill: var(--main-text-color)
+	fill: var(--main-text-color);
+	/*background-color: #101021cb;*/
 }
+
+
 
 
 :root {
 	/*--btnColor: #424289*/
+	--hoverColorProjects: #ffffffe0;
 	--btnColor: #d3d3d3;
-	--hoverColor: rgba(0, 0, 0, 0.3);
+	--hoverColorBtn: rgba(0, 0, 0, 0.3);
 	--main-text-color: rgb(0, 0, 0);
 	--primary-font: 'Assistant', sans-serif;
 	--primaryColor: white;
@@ -40,7 +44,6 @@ svg {
 }
 
 
-.secondaryShadow {}
 
 
 
@@ -53,7 +56,14 @@ body {
 
 
 
-
+#mobileMylogo{
+	display: none;
+	top: 15px;
+	left: 20px;
+	position: absolute;
+	width: 30px;
+	/*height: 30px;*/
+}
 
 
 
@@ -165,6 +175,7 @@ input[type=checkbox] {
 
 
 nav {
+	/*border: 2px solid black;*/
 	flex-direction: row-reverse;
 	max-width: 1200px;
 	display: flex;
@@ -179,6 +190,8 @@ nav {
 	align-items: center;
 
 }
+
+
 
 
 nav ul {
@@ -210,9 +223,11 @@ nav>ul>li> :hover {
 
 }
 ul *{
-	flex: 1;
+	flex: 2;
 	text-align: center;
 }
+
+
 
 nav>ul>li>a {
 
@@ -329,6 +344,7 @@ p {
 	margin: 0 auto;
 	text-align: center;
 	background-color: var(--btnColor);
+	color: var(--main-text-color);
 	font-family: var(--primary-font);
 	text-decoration: none;
 }
@@ -348,7 +364,7 @@ p {
 
 #aboutMeTextContainer a:visited {
 	text-decoration: inherit;
-	color: inherit;
+
 	cursor: auto;
 }
 
@@ -535,8 +551,8 @@ section p {
 	align-items: center;
 	width: 300px;
 	height: 100%;
-	background: #ffffffe0;
-	color: #000000;
+	background: var(--hoverColorProjects);
+	color: var(--main-text-color);
 	transition: all 0.9s ease;
 }
 
@@ -642,8 +658,8 @@ section p {
 	align-items: center;
 	width: 300px;
 	height: 100%;
-	background: #ffffffe0;
-	color: #000000;
+	background: var(--hoverColorProjects);
+	color: var(--main-text-color);
 	transition: all 0.9s ease;
 }
 
@@ -722,16 +738,18 @@ textarea {
 }
 
 input[type=button] {
+	color: var(--main-text-color);
+	background-color: var(--btnColor);
 	height: 60px;
 	margin: 10px 0px;
 	transition: 1s;
 	border: 0;
 }
 
-input[type=button]:hover {
-	background-color: #777777;
+/*input[type=button]:hover {
+	background-color: var(--);
 	/* transition: 1s; */
-}
+
 
 
 
@@ -885,6 +903,7 @@ footer p {
 	text-decoration: none;
 	margin: 10px 10px 10px 10px;
 	padding: 5px;
+	color: var(--main-text-color);
 	background-color: var(--btnColor);
 	border: 0 solid black;
 }
@@ -896,14 +915,14 @@ footer p {
 
 #modal a:link {
 	text-decoration: inherit;
-	color: inherit;
+
 	cursor: auto;
 }
 
 
 #modal a:visited {
 	text-decoration: inherit;
-	color: inherit;
+
 	cursor: auto;
 }
 
@@ -962,6 +981,19 @@ footer p {
 }
 
 @media screen and (max-width: 600px) {
+
+	.form{
+		padding: 0
+	}
+
+		form{
+			width: 90%;
+		}
+
+
+	#mobileMylogo{
+		display: block;
+	}
 
 	#header {
 		width: 100vw;
@@ -1044,7 +1076,7 @@ footer p {
 
 
 	.navbar-icon {
-		margin-right: 50px;
+		margin-right: 35px;
 		margin-top: 25px;
 		width: 25px;
 		text-align: center;
@@ -1140,9 +1172,9 @@ footer p {
 	}
 
 	#modalContent {
-		margin: 0px;
+		/*margin: 0px;*/
 		margin-top: 100px;
-		height: 50%;
+		height: 75%;
 	}
 
 
