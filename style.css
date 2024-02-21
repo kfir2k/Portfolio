@@ -357,14 +357,14 @@ p {
 
 #aboutMeTextContainer a:link {
 	text-decoration: inherit;
-	color: inherit;
+	/*color: inherit;*/
 	cursor: auto;
 }
 
 
 #aboutMeTextContainer a:visited {
 	text-decoration: inherit;
-
+color: var(--main-text-color);
 	cursor: auto;
 }
 
@@ -720,6 +720,7 @@ label {
 
 form input[type=text],
 input[type=email] {
+	font-size: 16px;
 	height: 40px;
 	background-color: var(--primaryColorLessStrongWhite);
 	color: var(--main-text-color);
@@ -727,7 +728,7 @@ input[type=email] {
 }
 
 textarea {
-
+	font-size: 16px;
 	height: 100px;
 	background-color: var(--primaryColorLessStrongWhite);
 	color: var(--main-text-color);
@@ -1008,7 +1009,7 @@ footer p {
 
 	section p {
 
-		text-align: left;
+		text-align: center;
 		font-size: 1em;
 		padding: 25px;
 		/*margin-bottom: 30px;*/
