@@ -1,8 +1,8 @@
 // ===================Website ui ================
 
- let backgroundVANTA = VANTA.NET({
-        el: "#hero-image",
-    })
+let backgroundVANTA = VANTA.NET({
+    el: "#hero-image",
+})
 backgroundVANTA.resize()
 backgroundVANTA.setOptions({
     mouseControls: true,
@@ -86,9 +86,11 @@ function changeRootVariables(isDarkMode) {
     console.log("In there");
     let root = document.documentElement;
     if (isDarkMode) {
-        root.style.setProperty('--primaryColor', '#0b0b16');
+        // root.style.setProperty('--primaryColor', '#0b0b16');
+        root.style.setProperty('--primaryColor', '#17172e');
         root.style.setProperty('--main-text-color', 'whitesmoke');
-        root.style.setProperty('--primaryColorLessStrongWhite', 'rgb(6, 6, 12)');
+        // root.style.setProperty('--primaryColorLessStrongWhite', 'rgb(6, 6, 12)');
+        root.style.setProperty('--primaryColorLessStrongWhite', 'rgb(12, 12, 24)');
         myLogo.style.filter = "invert(100%)"
         allBoxShadows.forEach((item) => item.classList.remove("primaryShadow"))
     } else {
@@ -146,10 +148,10 @@ darkModeBtn.addEventListener("click", () => {
             spacing: 17.00,
             showDots: false
         })
-    
+
     }
     darkModeBtn.classList.toggle("active");
-    
+
 });
 
 
@@ -193,7 +195,7 @@ function animationStart() {
         }
 
     }
- 
+
 }
 
 let progressBarExecuted = false;
@@ -240,7 +242,7 @@ function progressBar(el, precent) {
 }
 
 
- 
+
 
 
 const projItemsArray = document.querySelectorAll('.item')
@@ -359,20 +361,20 @@ function renderItemModal(itemObject) {
 
     links[0].href = itemObject.zipFile
     links[1].href = itemObject.liveDemoLink
-    
+
     if (itemObject.gitLink === "") {
         links[2].style.display = "none"
     } else {
         links[2].style.display = "block"
     }
 
-    
+
     if (itemObject.title === "FIFA Squad Builder") {
         par[0].style.display = "block"
     }
-  
 
-    
+
+
     links[2].href = itemObject.gitLink
     projImg[0].src = itemObject.imgSrc
     title[0].innerText = itemObject.title
