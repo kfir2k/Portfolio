@@ -19,7 +19,7 @@ backgroundVANTA.setOptions({
     spacing: 17.00,
     showDots: false
 })
-console.log(backgroundVANTA);
+
 
 //VANTA.NET(heroImageDarkMode)
 
@@ -27,7 +27,7 @@ console.log(backgroundVANTA);
 
 
 
-//console.log("test");
+
 window.addEventListener("scroll", animationStart)
 window.addEventListener("DOMContentLoaded", animationStart)
 window.addEventListener("DOMContentLoaded", knowlegeController)
@@ -39,7 +39,7 @@ const myLogo = document.getElementById("myLogo")
 const mobileMyLogo = document.getElementById("mobileMylogo")
 const allBoxShadows = document.querySelectorAll(".primaryShadow")
 let isDarkMode = false
-console.log("closeModalBtn", closeModalBtn);
+
 
 window.onclick = function (event) {
     if (event.target == modal) {
@@ -61,7 +61,7 @@ window.onclick = function (event) {
 }
 
 closeModalBtn[0].onclick = function (event) {
-    console.log("clicked");
+
     if (event.target === closeModalBtn[0]) {
         document.querySelectorAll(['section', '#hero-image-container']).forEach((el) => {
             el.style.filter = "none";
@@ -84,7 +84,7 @@ closeModalBtn[0].onclick = function (event) {
 
 function changeRootVariables(isDarkMode) {
     // Access the root element
-    console.log("In there");
+
     let root = document.documentElement;
     if (isDarkMode) {
 
@@ -187,7 +187,7 @@ darkModeBtn.addEventListener("click", () => {
 
 function animationStart() {
 
-    //console.log("scroll ev", window.scrollY);
+
 
     if (!window.matchMedia("(max-width: 600px)").matches) {
 
@@ -239,14 +239,14 @@ function progressBar(el, precent) {
     let interval = setInterval(() => {
         if (start >= precent) {
             clearInterval(interval)
-            // console.log("interval cleard");
+
         } else {
             start++
-            //console.log(start);
+
             el.innerHTML = `${start}%`
 
         }
-        // console.log("interval cleard done!!!!!!!!!!!");
+
 
     }, 10)
 
@@ -363,7 +363,7 @@ const landingPage12 = {
 
 
 function renderItemModal(itemObject) {
-    console.log("ITEMS", itemObject.gitLink);
+
 
     const links = modalContent.querySelectorAll("a")
     const projImg = modalContent.querySelectorAll("img")
@@ -408,7 +408,7 @@ function openModalPreviewProjects() {
     modal.style.opacity = "1";
 
     const clickedItemIndex = realArrayFromItems.indexOf(this)
-    console.log("clicked index", clickedItemIndex);
+
     if (clickedItemIndex === 0) {
         renderItemModal(landingPage1)
     }
